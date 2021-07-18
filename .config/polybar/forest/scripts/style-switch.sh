@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+SDIR="$HOME/.config/polybar/forest/scripts"
+RDIR="$HOME/.config/rofi"
+
+# Launch Rofi
+MENU="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p '' \
+-theme $RDIR/rofi/styles.rasi \
+<<< " Default| Nord| Gruvbox| Dark| Cherry|")"
+            case "$MENU" in
+				*Default) "$SDIR"/styles.sh --default ;;
+				*Nord) "$SDIR"/styles.sh --nord ;;
+				*Gruvbox) "$SDIR"/styles.sh --gruvbox ;;
+				*Dark) "$SDIR"/styles.sh --dark ;;
+				*Cherry) "$SDIR"/styles.sh --cherry ;;
+            esac

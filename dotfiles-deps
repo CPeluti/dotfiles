@@ -1,0 +1,17 @@
+########
+# apps #
+########
+alacritty
+polybar
+picom ibh's fork
+rofi
+feh
+nm-applet
+########
+
+font Icomoon Feather
+font Iosevka Nerd Font
+
+.Xres
+
+editar o .Xresources
