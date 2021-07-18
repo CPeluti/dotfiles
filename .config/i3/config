@@ -12,7 +12,7 @@
 #
 # Startup Commands
 #
-
+exec "xrdb ~/.Xresources"
 exec_always "~/.config/scripts/picom.sh"
 exec_always "~/.config/scripts/polybar.sh"
 exec --no-startup-id "nm-applet"
