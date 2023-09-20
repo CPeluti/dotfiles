@@ -104,6 +104,7 @@ local opts = {
 
 local mappings = {
   name = "test",
+  ["n"] = {"<cmd>NvimTreeToggle<CR>", "Open NvimTree"},
   ["p"] = {"<cmd>Lazy<CR>", "Plugin Manager"}
 }
 

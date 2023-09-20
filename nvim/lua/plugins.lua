@@ -16,7 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  "preservim/nerdtree",
+  "nvim-tree/nvim-tree.lua",
+  "nvim-tree/nvim-web-devicons",
   "ggandor/lightspeed.nvim",
   "folke/which-key.nvim",
 })
