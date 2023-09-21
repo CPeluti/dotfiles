@@ -104,6 +104,11 @@ local opts = {
 
 local mappings = {
   name = "test",
+  ["f"] = {
+    name = "file",
+    f = {"<cmd>Telescope find_files<CR>", "Find File"},
+    g = {"<cmd>Telescope live_grep<CR>", "Grep File"},
+  },
   ["n"] = {"<cmd>NvimTreeToggle<CR>", "Open NvimTree"},
   ["p"] = {"<cmd>Lazy<CR>", "Plugin Manager"}
 }
