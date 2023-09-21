@@ -18,6 +18,11 @@ map(nxo, 'L', 'I', opts)
 map("n", "k", "nzzzv")
 map("n", "K", "nzzzv")
 
+map("n", "<leader>wh", "<C-w>h", opts)
+map("n", "<leader>wn", "<C-w>j", opts)
+map("n", "<leader>we", "<C-w>k", opts)
+map("n", "<leader>wi", "<C-w>l", opts)
+
 -- usefull remaps
 
 map("v", "N", ":m '>+1<CR>gv=gv")
