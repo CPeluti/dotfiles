@@ -1,5 +1,3 @@
-require "keymaps"
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
@@ -19,7 +17,6 @@ require("lazy").setup({
   "nvim-tree/nvim-tree.lua",
   "nvim-tree/nvim-web-devicons",
   "ggandor/lightspeed.nvim",
-  "folke/which-key.nvim",
   "BurntSushi/ripgrep",
   "numToStr/Comment.nvim",
   {
@@ -46,5 +43,8 @@ require("lazy").setup({
         'nvim-lua/plenary.nvim',
       }
   },
+  'theprimeagen/harpoon',
+  'mbbill/undotree',
+  'christoomey/vim-tmux-navigator',
 })
 
